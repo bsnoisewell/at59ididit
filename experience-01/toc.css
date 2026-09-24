@@ -1,0 +1,31 @@
+.reader-toc {
+  width: min(100%, var(--reading));
+  margin: 3rem auto 6rem;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+
+.reader-toc h1 {
+  margin: 0 0 2rem;
+  color: var(--heading);
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.reader-toc ol { display: block; margin: 0; padding: 0; list-style: none; }
+.reader-toc li { border: 0; }
+.reader-toc a {
+  display: block;
+  padding: .75rem 0;
+  color: #26292C;
+  font-family: var(--sans);
+  font-size: 1.08em;
+  line-height: 1.65;
+}
+.reader-toc a .toc-number, .reader-toc a .toc-label { color: inherit; font-size: inherit; }
+.reader-toc a .toc-number::after { content: ".\00a0"; }
+
+@media (max-width: 800px) {
+  .reader-toc { margin: 2rem auto 4rem; padding: 0; }
+}

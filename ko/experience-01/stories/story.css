@@ -1,0 +1,37 @@
+.story-main { padding-top: clamp(2rem, 4vw, 3rem); }
+.reader-header .wordmark, .reader-header .story-header-label { font-size: 13px; font-weight: 600; }
+.story-header-label { margin: 0 0 0 auto; text-align: right; }
+.story-chapter { padding-bottom: 0; }
+.story-chapter > p:not(.illustration) { color: #26292C; }
+.story-chapter > .ko-chapter-title { margin-top: 0; padding-top: 0; border-top: 0; }
+#ko-ch01.story-chapter > .ko-chapter-title { font-size: 3.9em; }
+#ko-ch01.story-chapter > p:not(.ko-chapter-title):not(.illustration) { font-family: var(--sans); line-height: 1.65; margin: 1.5em 0; }
+#ko-ch01.story-chapter > .illustration { margin-top: calc(1.4em + 20px); }
+
+@media (min-width: 801px) {
+  .reader-header { max-width: var(--reading); }
+}
+
+.story-navigation {
+  display: grid;
+  font-size: .9rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 1.5rem;
+  width: min(100%, var(--reading));
+  margin: 6rem auto 8rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+.story-navigation a { color: var(--blue-dark); transition: color .2s ease; }
+.story-navigation a:hover, .story-navigation a:focus-visible { color: var(--heading); }
+.story-toc { justify-self: center; text-align: center; }
+.story-next { justify-self: end; text-align: right; }
+.story-next span { display: block; }
+.story-next-title { margin-top: .35rem; font-weight: 600; }
+
+@media (max-width: 800px) {
+  .story-header-label { max-width: 45%; line-height: 1.25; }
+  .story-main { padding-top: 2rem; }
+  .story-navigation { gap: 1rem; margin-top: 4rem; margin-bottom: 5rem; }
+}

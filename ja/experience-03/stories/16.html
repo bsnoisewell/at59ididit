@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ja">
+
+
+
+
+
+<head>
+
+
+
+
+
+  <meta charset="UTF-8">
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+  <meta name="description" content="星を自然に散らすためランダム座標を使った。しかし最後には、コードより一枚の背景画像の方が簡単だと気づいた。">
+
+
+
+
+
+  <title>AIは星をどう描く？JavaScriptのランダム配置</title>
+
+
+
+
+
+  <link rel="stylesheet" href="../../../css/style.css">
+
+
+
+
+
+  <link rel="stylesheet" href="../../../css/reader.css">
+
+
+
+
+
+  <link rel="stylesheet" href="../../../experience-01/first-chapter.css">
+
+
+
+
+
+  <link rel="stylesheet" href="../../../experience-01/stories/story.css">
+
+
+
+
+
+  <style>
+
+
+
+
+
+    #ko-ch16.story-chapter > .ko-chapter-title { font-family: "East Sea Dokdo", cursive; font-size: 3.9em; font-weight: 400; line-height: 1.2; letter-spacing: normal; text-align: center; }
+
+
+
+
+
+    #ko-ch16.story-chapter > p:not(.ko-chapter-title):not(.illustration) { font-family: var(--sans); font-size: 1.08em; line-height: 1.65; margin: 1.5em 0; }
+
+
+
+
+
+    #ko-ch16.story-chapter > .illustration { margin: calc(1.4em + 20px) 0 0; text-align: center; }
+
+
+
+
+
+    #ko-ch16.story-chapter > .illustration img { width: 80%; margin-inline: auto; }
+
+
+
+
+
+    .story-previous { justify-self: start; text-align: left; }
+
+
+
+
+
+    .story-previous span { display: block; }
+
+
+
+
+
+  </style>
+
+
+
+
+
+<link rel="canonical" href="https://at59ididit.com/ja/experience-03/stories/16.html"><link rel="alternate" hreflang="en" href="https://at59ididit.com/experience-03/stories/16.html"><link rel="alternate" hreflang="ko" href="https://at59ididit.com/ko/experience-03/stories/16.html"><link rel="alternate" hreflang="de" href="https://at59ididit.com/de/experience-03/stories/16.html"><link rel="alternate" hreflang="fr" href="https://at59ididit.com/fr/experience-03/stories/16.html"><link rel="alternate" hreflang="es" href="https://at59ididit.com/es/experience-03/stories/16.html"><link rel="alternate" hreflang="ja" href="https://at59ididit.com/ja/experience-03/stories/16.html"><link rel="alternate" hreflang="x-default" href="https://at59ididit.com/experience-03/stories/16.html"></head>
+
+
+
+
+
+<body class="reader-page">
+
+
+
+
+
+  <a class="skip-link" href="#book-content">本文へ移動</a>
+
+
+
+
+
+  <header class="site-header reader-header">
+
+
+
+
+
+    <a class="wordmark" href="../../index.html" target="_top"><span>AT 59,</span> I DID IT WITH AI.</a>
+
+
+
+
+
+    <span class="reader-kicker story-header-label">体験 #03 · 本 #03</span>
+
+
+
+
+
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+  <main class="story-main" id="book-content">
+
+
+
+
+
+    <article class="epub-content ko-chapter story-chapter" id="ko-ch16">
+
+
+
+
+
+<h1 class="ko-chapter-title">16.<br>AIが星を描く方法</h1>
+
+
+
+
+
+<p>2つ目のウェブサイトを作りながら、<br>夜空を星でいっぱいにしたかった。</p><p>AIに、<br>星を描いてもらった。</p><p>星ができた。</p><p>でも、<br>何か変だ。</p><p>星が自然に散らばっているんじゃなくて、</p><p>四角い形に<br>並んでいる。</p><p>「夜空に、<br>自然に散らばっている感じにして」</p><p>AIは、<br>星一つひとつの位置を数字にして、</p><p>横と縦の座標を<br>計算していた。</p><p>あれこれ直した。</p><p>いろいろあった末に、</p><p>それらしい夜空が<br>できあがった。</p><p>あとで、<br>それを作ったコードを見る機会があった。</p><p>星を不規則に配置するために、<br>乱数を使っていた。</p><p>星が現れるたびに、</p><p>位置を計算して<br>作る仕組みだった。</p><p>そのせいで、</p><p>星が表示されるまでに<br>少し時間がかかっていた。</p><p>ふと思った。</p><p>「星を最初から<br>背景画像に入れておけば<br>いいんじゃない？」</p><p>そうすれば、<br>簡単だった。</p><p>考えてみると、</p><p>AIに、</p><p>「適当に、<br>自然に散らばらせて」</p><p>というのは、</p><p>けっこう難しい注文だった。</p><p>人間なら、</p><p>ただ筆を持って、</p><p>適当なところに<br>点を打てばいいのに。</p><p class="illustration"><img src="../../../images/illustrations/book3/3-16.webp" alt="第03巻・第16章の挿絵" loading="lazy" decoding="async"></p>
+
+
+
+
+
+    </article>
+
+
+
+
+
+
+
+
+
+
+
+    <nav class="story-navigation" aria-label="ストーリー間の移動">
+
+
+
+
+
+      <a class="story-previous" href="15.html"><span>← 前へ</span><span class="story-next-title">15. テンプレートを買えと言った。でも、自分で作った。</span></a>
+
+
+
+
+
+      <a class="story-toc" href="../index.html#toc-title">目次</a>
+
+
+
+
+
+      <a class="story-next" href="17.html"><span>次へ →</span><span class="story-next-title">17. ちょっと待って。今、僕は誰と話してるんだ？</span></a>
+
+
+
+
+
+    </nav>
+
+
+
+
+
+  </main>
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>

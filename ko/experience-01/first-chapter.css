@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "East Sea Dokdo";
+  src: url("fonts/EastSeaDokdo-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NotoSerifKR";
+  src: url("fonts/NotoSerifKR-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+#ko-ch01 > .ko-chapter-title {
+  font-family: "East Sea Dokdo", cursive;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+#ko-ch01 > p:not(.ko-chapter-title):not(.illustration) {
+  font-family: "NotoSerifKR", serif;
+  font-size: 1.08em;
+  line-height: 1.35;
+  margin: .42em 0;
+}
+
+#ko-ch01 > .illustration {
+  margin: 1.4em 0 0;
+  text-align: center;
+}
+
+#ko-ch01 > .illustration img {
+  width: 80%;
+  margin-inline: auto;
+}
