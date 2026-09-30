@@ -315,8 +315,8 @@ body.inside-all-stories-open { position: fixed; width: 100%; overflow: hidden; }
 .milestones-list li:not(:last-child)::after { content: ""; position: absolute; top: -36px; bottom: -36px; left: 100%; width: 3rem; background: #fff; clip-path: polygon(0 0, 46.667% 0, 86.667% 50%, 46.667% 100%, 0 100%, 40% 50%); }
 .milestone-date { color: #000; font-size: 1.05rem; font-weight: 400; line-height: 1.5; }
 .milestone-event { color: var(--heading); font-size: 1.2rem; font-weight: 600; line-height: 1.6; }
-html[lang="ko"] .milestones-list li:last-child > .milestone-date,
-html[lang="ko"] .milestones-list li:last-child > .milestone-event { transform: translateX(30px); }
+.milestones-list li:last-child > .milestone-date,
+.milestones-list li:last-child > .milestone-event { transform: translateX(30px); }
 .milestones-outro { margin: 1.75rem 24px 0; padding-bottom: .875rem; color: var(--heading); font-size: 1.25rem; font-weight: 600; line-height: 1.6; }
 .milestones-outro span { display: block; }
 .messages { padding: 3.5rem max(24px, calc((100vw - var(--max)) / 2)); background: #F4F0E5; text-align: center; }
